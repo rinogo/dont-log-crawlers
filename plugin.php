@@ -13,7 +13,7 @@ function dlb_is_crawler() {
     $current = strtolower( $_SERVER['HTTP_USER_AGENT'] );
     
     $crawlers = array(
-        // List of Active crawlers & bots since October 2013 (imcomplete)
+        // List of Active crawlers & bots since October 2013 (incomplete)
         // picked up from: http://user-agent-string.info/list-of-ua/bots
         // also: http://myip.ms/browse/web_bots/Known_Web_Bots_Web_Bots_2014_Web_Spider_List.html
         '200please.com/bot',
