@@ -9,6 +9,11 @@ Author URI: http://www.philosophyguides.org
 **/
 
 function dlb_is_crawler() {
+    
+    //set to 1 to be more agressive in filtering
+    //adds 'curl', 'ruby' and 'bot'
+    $dont_log_aggressive = 0;
+    
     // Get current User-Agent
     $current = strtolower( $_SERVER['HTTP_USER_AGENT'] );
     
@@ -181,7 +186,6 @@ function dlb_is_crawler() {
         'trendiction.de/bot',
         'turnitinbot',
         'tweetedtimes',
-        'tweetedtimes bot',
         'tweetmeme',
         'twitterbot',
         'uaslinkchecker',
@@ -233,6 +237,14 @@ function dlb_is_crawler() {
         'xenu link sleuth',
 
     );
+    
+    if ($dont_log_aggressive == 1) {
+    
+        $crawlers[] = 'bot';
+        $crawlers[] = 'ruby';
+        $crawlers[] = 'curl';
+    
+    }
     
     // Check if the UA string contains any strings listed above
     $is_crawler = ( str_replace( $crawlers, '',$current ) != $current );
