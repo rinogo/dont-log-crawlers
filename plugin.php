@@ -11,7 +11,7 @@ Author URI: http://www.philosophyguides.org
 function dlb_is_crawler() {
     
     //set to 1 to be more agressive in filtering
-    //adds 'curl', 'ruby' and 'bot'
+    //adds 'curl', wget', 'ruby' and 'bot'
     $dont_log_aggressive = 0;
     
     // Get current User-Agent
@@ -243,6 +243,7 @@ function dlb_is_crawler() {
         $crawlers[] = 'bot';
         $crawlers[] = 'ruby';
         $crawlers[] = 'curl';
+        $crawlers[] = 'wget';
     
     }
     
