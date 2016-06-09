@@ -175,6 +175,7 @@ function dlb_is_crawler() {
         'spreadtrum',
         'ssl-crawler',
         'steeler',
+        'SubnetSearch',
         'suma spider',
         'surveybot',
         'suggybot',
