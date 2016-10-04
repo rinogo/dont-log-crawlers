@@ -79,6 +79,7 @@ function dlb_is_crawler() {
         'exabot',
         'exb language crawler',
         'ezooms',
+        'Facebot',
         'facebookexternalhit',
         'facebookplatform',
         'fairshare',
