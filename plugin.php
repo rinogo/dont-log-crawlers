@@ -140,6 +140,7 @@ function dlb_has_crawler_user_agent() {
         'netcraftsurveyagent',
         'netestate ne crawler',
         'netseer crawler',
+        'nixstatsbot',
         'nuhk',
         'obot',
         'omgilibot',
